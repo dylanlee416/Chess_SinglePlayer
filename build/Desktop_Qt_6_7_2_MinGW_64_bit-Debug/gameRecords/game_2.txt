@@ -1,0 +1,62 @@
+Game record initialized!
+
+Step 1: Pe4
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 2: Pc5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	bP	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	bP	00	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 3: Pe5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	bP	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	bP	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 4: Pe6
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	bP	00	bP	bP	bP	
+00	00	00	00	bP	00	00	00	
+00	00	bP	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 5: Nf3
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	bP	00	bP	bP	bP	
+00	00	00	00	bP	00	00	00	
+00	00	bP	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 6: Nf6
+bR	bN	bB	bQ	bK	bB	00	bR	
+bP	bP	00	bP	00	bP	bP	bP	
+00	00	00	00	bP	bN	00	00	
+00	00	bP	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+

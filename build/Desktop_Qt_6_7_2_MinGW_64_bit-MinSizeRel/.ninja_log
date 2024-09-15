@@ -1,0 +1,18 @@
+# ninja log v6
+8	257	7481026489497754	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/cmake.verify_globs	f8a27ee393501326
+220	1243	7481025735865350	chess_autogen/timestamp	1484020baa5216a3
+1463	1632	7481025739810320	CMakeFiles/chess.dir/chess_autogen/EWIEGA46WW/qrc_resource.cpp.obj	b129b95c2c61fff6
+220	1243	7481025735865350	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/chess_autogen/mocs_compilation.cpp	1484020baa5216a3
+220	1243	7481025735865350	chess_autogen/mocs_compilation.cpp	1484020baa5216a3
+220	1243	7481025735865350	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/chess_autogen/timestamp	1484020baa5216a3
+1251	1394	7481025739007050	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/chess_autogen/EWIEGA46WW/qrc_resource.cpp	97eb4953b9d856dc
+1251	1394	7481025739007050	chess_autogen/EWIEGA46WW/qrc_resource.cpp	97eb4953b9d856dc
+1409	3257	7481025739262290	CMakeFiles/chess.dir/main.cpp.obj	7b241497c3b76a7c
+1419	3279	7481025739365043	CMakeFiles/chess.dir/mainwindow.cpp.obj	50afe1b0c9a0b7af
+1442	3407	7481025739589929	CMakeFiles/chess.dir/promotiondialog.cpp.obj	10a7f4e5950e9ece
+1395	3526	7481025739119076	CMakeFiles/chess.dir/chess_autogen/mocs_compilation.cpp.obj	46fa368915fe338d
+1452	3629	7481025739695185	CMakeFiles/chess.dir/statuspanel.cpp.obj	ae837c7868b214e6
+1431	4567	7481025739484426	CMakeFiles/chess.dir/ChessBoard.cpp.obj	f51f77055a93f1a5
+4568	4778	7481025770851182	chess.exe	20be0cf83990535
+259	1133	7481026498854548	build.ninja	34c054b3532cd0a6
+5	212	7481026499286113	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/cmake.verify_globs	f8a27ee393501326
