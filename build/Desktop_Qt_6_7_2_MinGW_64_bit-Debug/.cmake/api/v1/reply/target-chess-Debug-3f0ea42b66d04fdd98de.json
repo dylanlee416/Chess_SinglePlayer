@@ -375,11 +375,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "chess_autogen::@6890427a1f51a3e7e1df"
+			"id" : "chess_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "chess_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "chess_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "chess::@6890427a1f51a3e7e1df",
@@ -619,7 +619,7 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "King.h",
+			"path" : "king.h",
 			"sourceGroupIndex" : 1
 		},
 		{

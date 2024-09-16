@@ -1,8 +1,8 @@
 Game Record
 Time Control: 300s
-Start Time: 2024-09-16 12:17:59
+Start Time: 2024-09-16 14:48:19
 
-Step 1: Pe4
+Step 22: Pe4
 bR	bN	bB	bQ	bK	bB	bN	bR	
 bP	bP	bP	bP	bP	bP	bP	bP	
 00	00	00	00	00	00	00	00	
@@ -12,7 +12,7 @@ bP	bP	bP	bP	bP	bP	bP	bP
 wP	wP	wP	wP	00	wP	wP	wP	
 wR	wN	wB	wQ	wK	wB	wN	wR	
 
-Step 2: Pd5
+Step 23: Pd5
 bR	bN	bB	bQ	bK	bB	bN	bR	
 bP	bP	bP	00	bP	bP	bP	bP	
 00	00	00	00	00	00	00	00	
@@ -22,7 +22,7 @@ bP	bP	bP	00	bP	bP	bP	bP
 wP	wP	wP	wP	00	wP	wP	wP	
 wR	wN	wB	wQ	wK	wB	wN	wR	
 
-Step 3: Nf3
+Step 24: Nf3
 bR	bN	bB	bQ	bK	bB	bN	bR	
 bP	bP	bP	00	bP	bP	bP	bP	
 00	00	00	00	00	00	00	00	
@@ -31,4 +31,24 @@ bP	bP	bP	00	bP	bP	bP	bP
 00	00	00	00	00	wN	00	00	
 wP	wP	wP	wP	00	wP	wP	wP	
 wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 25: Pc5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	00	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	bP	bP	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 26: Bc4
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	00	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	bP	bP	00	00	00	00	
+00	00	wB	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	00	wR	
 

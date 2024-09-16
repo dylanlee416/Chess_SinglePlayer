@@ -19,10 +19,13 @@ public:
     ChessBoard(QWidget *parent = nullptr);
 
     void setStatusPanel(StatusPanel* _statusPanel) { statusPanel = _statusPanel; }
-    void startGame() { isGaming = true; initialGameRecordFile(); }
+    void startGame();
+    void resetGame();
+    void endGame() { isGaming = true; statusPanel -> stopTimer(); }
     bool getIsGaming() { return isGaming; }
+    bool getIsCurrentWhite() { return currentMoveColor; }
     void timeRunOut() { isGaming = false; }
-    bool isSquareAttacked(QPoint square);
+    bool isSquareAttacked(QPoint square, bool iswhite);
 
 private:
     StatusPanel* statusPanel;
@@ -64,8 +67,9 @@ private:
     void switchMove(int startRow, int startCol, int endRow, int endCol, ChessPiece*& piece);
     void animatePieceMove(int startRow, int startCol, int endRow, int endCol, ChessPiece* piece);
 
+    void clearPieces();
+    void clearHighlightedSquares();
     void resetSquareColor(int row, int col);
-    void clearHighlightedSquares();  // 清除高亮
 
     void setPiece(ChessPiece* piece, int row, int col);
 

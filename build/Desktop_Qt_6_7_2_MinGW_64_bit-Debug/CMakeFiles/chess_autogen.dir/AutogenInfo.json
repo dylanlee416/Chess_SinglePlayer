@@ -281,11 +281,11 @@
 			"EWIEGA46WW/moc_Chessboard.cpp",
 			null
 		],
-		[ "E:/Code/QT/chess/King.h", "MU", "EWIEGA46WW/moc_King.cpp", null ],
 		[ "E:/Code/QT/chess/Knight.h", "MU", "EWIEGA46WW/moc_Knight.cpp", null ],
 		[ "E:/Code/QT/chess/Pawn.h", "MU", "EWIEGA46WW/moc_Pawn.cpp", null ],
 		[ "E:/Code/QT/chess/Queen.h", "MU", "EWIEGA46WW/moc_Queen.cpp", null ],
 		[ "E:/Code/QT/chess/Rook.h", "MU", "EWIEGA46WW/moc_Rook.cpp", null ],
+		[ "E:/Code/QT/chess/king.h", "MU", "EWIEGA46WW/moc_king.cpp", null ],
 		[
 			"E:/Code/QT/chess/mainwindow.h",
 			"MU",

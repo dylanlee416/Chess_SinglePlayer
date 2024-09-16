@@ -579,7 +579,6 @@ chess_autogen/timestamp: \
 	E:/Code/QT/chess/ChessBoard.cpp \
 	E:/Code/QT/chess/ChessPiece.h \
 	E:/Code/QT/chess/Chessboard.h \
-	E:/Code/QT/chess/King.h \
 	E:/Code/QT/chess/Knight.h \
 	E:/Code/QT/chess/Pawn.h \
 	E:/Code/QT/chess/Queen.h \
@@ -589,6 +588,7 @@ chess_autogen/timestamp: \
 	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/chess_autogen/moc_predefs.h \
+	E:/Code/QT/chess/king.h \
 	E:/Code/QT/chess/main.cpp \
 	E:/Code/QT/chess/mainwindow.cpp \
 	E:/Code/QT/chess/mainwindow.h \

@@ -6,7 +6,7 @@
 
 #include "chessboard.h"
 
-StatusPanel::StatusPanel(QWidget* parent) : QWidget(parent), whiteTurn(true), whiteTime(0), blackTime(0)
+StatusPanel::StatusPanel(QWidget* parent) : QWidget(parent), whiteTime(0), blackTime(0)
 {
     initializeUI();
 
@@ -32,14 +32,10 @@ void StatusPanel::initializeUI()
     whiteClock->setStyleSheet("background-color: green; color: black; font-size: 24px;"); // Default style
     blackClock->setStyleSheet("background-color: gray; color: white; font-size: 24px;"); // Default style
 
-    // Initialize clocks to 05:00
-    whiteTime = 5 * 60; // 5 minutes
-    blackTime = 5 * 60; // 5 minutes
-    updateClockDisplay(); // Update display with initial values
 
     // Create the time selector dropdown
     timeSelector = new QComboBox(this);
-    // timeSelector->addItem("2 seconds", 2);
+    timeSelector->addItem("2 seconds", 2);
     timeSelector->addItem("5 minutes", 300);
     timeSelector->addItem("10 minutes", 600);
     timeSelector->addItem("15 minutes", 900);
@@ -50,10 +46,24 @@ void StatusPanel::initializeUI()
     timeSelector->addItem("12 hours", 43200);
     timeSelector->addItem("24 hours", 86400);
 
+    // Initialize clocks to 05:00
+    int initialTime = timeSelector->itemData(0).toInt();  // 获取第一个选项的时间（秒）
+
+    whiteTime = initialTime;  // 重置白棋计时器
+    blackTime = initialTime;  // 重置黑棋计时器
+
+    // 更新计时器显示
+    updateClockDisplay();  // 将白棋和黑棋的初始时间更新到 UI
+
     // Create the start button
     startButton = new QPushButton("Start Game", this);
     startButton->setFixedSize(100, 30);  // 设置按钮的固定宽度为100，高度为50
     connect(startButton, &QPushButton::clicked, this, &StatusPanel::startGame);
+
+    // 创建重置按钮
+    resetButton = new QPushButton("Reset Game", this);
+    resetButton->setFixedSize(100, 30);  // 设置按钮的固定宽度和高度
+    connect(resetButton, &QPushButton::clicked, this, &StatusPanel::resetGame);
 
     // Create the move history text edit
     moveHistory = new QTextEdit(this);
@@ -92,11 +102,12 @@ void StatusPanel::initializeUI()
     // Add the white clock layout
     mainLayout->addLayout(whiteClockLayout);
 
-    // Create a horizontal layout to center the start button
+    // 创建布局以将按钮居中
     QHBoxLayout* buttonLayout = new QHBoxLayout();
-    buttonLayout->addStretch();  // Add stretchable space to the left
-    buttonLayout->addWidget(startButton);  // Add the start button
-    buttonLayout->addStretch();  // Add stretchable space to the right
+    buttonLayout->addStretch();  // 添加可伸缩空间到左侧
+    buttonLayout->addWidget(startButton);  // 添加开始按钮
+    buttonLayout->addWidget(resetButton);  // 添加重置按钮
+    buttonLayout->addStretch();  // 添加可伸缩空间到右侧
 
     // Add the button layout to the main vertical layout
     mainLayout->addLayout(buttonLayout);
@@ -121,6 +132,7 @@ void StatusPanel::startGame()
 
     // Disable the start button and time selector
     startButton->setEnabled(false);
+    resetButton->setEnabled(true);
     timeSelector->setEnabled(false);
 }
 
@@ -152,7 +164,7 @@ void StatusPanel::updateClocks()
     if (!chessBoard->getIsGaming()) return;
 
     // Decrease time for the current player
-    if (whiteTurn)
+    if (chessBoard -> getIsCurrentWhite())
     {
         whiteTime--;
         if (whiteTime < 0) whiteTime = 0; // Ensure time does not go negative
@@ -250,17 +262,25 @@ void StatusPanel::showGameOverMessage(const QString& message)
     QMessageBox::information(this, "Game Over", message);
 }
 
-
-void StatusPanel::switchTurns()
-{
-    whiteTurn = !whiteTurn;  // Switch between white and black turns
-}
-
 void StatusPanel::resetGame()
 {
     gameTimer->stop();
+    moveHistory->clear();
+
+    // Initialize clocks
+    int initialTime = timeSelector->itemData(0).toInt();  // 获取第一个选项的时间（秒）
+
+    whiteTime = initialTime;  // 重置白棋计时器
+    blackTime = initialTime;  // 重置黑棋计时器
+
+    // 更新计时器显示
+    updateClockDisplay();  // 将白棋和黑棋的初始时间更新到 UI
+
     startButton->setEnabled(true);
+    resetButton->setEnabled(false);
     timeSelector->setEnabled(true);
+
+    chessBoard -> resetGame();
 }
 
 

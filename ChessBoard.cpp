@@ -37,9 +37,43 @@ ChessBoard::ChessBoard(QWidget *parent) : QWidget(parent), selectedSquare(-1, -1
 
     currentMoveColor = true;
     isGaming = false;
+}
+
+void ChessBoard::startGame()
+{
+    isGaming = true;
+    initialGameRecordFile();
+
     step = 1;
     castleIndex = 0;
     eatOnePieceDistance = 0;
+}
+
+void ChessBoard::resetGame() {
+    isGaming = false;
+    currentMoveColor = true;
+
+    initialGameRecordFile();
+    setupBoard();
+    clearPieces();
+    initializePieces();
+
+    step = 1;
+    castleIndex = 0;
+    eatOnePieceDistance = 0;
+}
+
+void ChessBoard::clearPieces() {
+    for (int row = 0; row < 8; ++ row)
+    {
+        for (int col = 0; col < 8; ++ col)
+        {
+            if (pieces[row][col])
+            {
+                delete pieces[row][col];
+            }
+        }
+    }
 }
 
 void ChessBoard::initialGameRecordFile() {
@@ -395,14 +429,20 @@ void ChessBoard::checkForCheckmateOrDraw() {
     if (isCheckmate()) {
         // 创建消息框
         QMessageBox msgBox;
-        msgBox.setWindowTitle("Checkmate!");
+        msgBox.setWindowTitle("Checkmate!");// 设置自定义图标
+        msgBox.setWindowIcon(QIcon(":/images/chess_icon.jpg"));
 
         // 设置文本和去除图标
         msgBox.setText(currentMoveColor ? "Black wins." : "White wins.");
         msgBox.setIcon(QMessageBox::NoIcon);  // 去除图标
 
-        // 调整字体大小并设置居中对齐
-        msgBox.setStyleSheet("QLabel { font-size: 18px; font-weight: bold; text-align: center; } QPushButton { font-size: 10px; }");
+        // Customize the appearance of the message box
+        msgBox.setStyleSheet(
+            "QMessageBox { background-color: #f5f5f5; border-radius: 10px; }"
+            "QLabel { font-family: 'Times New Roman'; font-size: 18px; font-weight: bold; color: #333333; text-align: center; }"
+            "QPushButton { background-color: #4CAF50; color: white; font-family: 'Times New Roman'; font-size: 12px; border-radius: 5px; padding: 5px 10px; }"
+            "QPushButton:hover { background-color: #45a049; }"
+            );
 
         msgBox.setStandardButtons(QMessageBox::Ok);
 
@@ -426,11 +466,17 @@ void ChessBoard::checkForCheckmateOrDraw() {
         msgBox.setWindowTitle("Draw!");
 
         // 设置文本和去除图标
-        msgBox.setText("Stalemate");
+        msgBox.setText("Stalemate");// 设置自定义图标
+        msgBox.setWindowIcon(QIcon(":/images/chess_icon.jpg"));
         msgBox.setIcon(QMessageBox::NoIcon);  // 去除图标
 
-        // 调整字体大小并设置居中对齐
-        msgBox.setStyleSheet("QLabel { font-size: 20px; font-weight: bold; text-align: center; } QPushButton { font-size: 10px; }");
+        // Customize the appearance of the message box
+        msgBox.setStyleSheet(
+            "QMessageBox { background-color: #f5f5f5; border-radius: 10px; }"
+            "QLabel { font-family: 'Times New Roman'; font-size: 18px; font-weight: bold; color: #333333; text-align: center; }"
+            "QPushButton { background-color: #4CAF50; color: white; font-family: 'Times New Roman'; font-size: 12px; border-radius: 5px; padding: 5px 10px; }"
+            "QPushButton:hover { background-color: #45a049; }"
+            );
 
         msgBox.setStandardButtons(QMessageBox::Ok);
 
@@ -447,7 +493,7 @@ void ChessBoard::checkForCheckmateOrDraw() {
 
         msgBox.exec();
 
-        isGaming = false;
+        endGame();
     }
 }
 
@@ -468,12 +514,12 @@ bool ChessBoard::isKingAttacked() {
         if (king != nullptr) break;
     }
 
-    if (isSquareAttacked(kingPos)) return true;
+    if (isSquareAttacked(kingPos, king -> isWhitePiece())) return true;
 
     return false;
 }
 
-bool ChessBoard::isSquareAttacked(QPoint square)
+bool ChessBoard::isSquareAttacked(QPoint square, bool iswhite)
 {
     int row = square.x();
     int col = square.y();
@@ -484,7 +530,7 @@ bool ChessBoard::isSquareAttacked(QPoint square)
             ChessPiece* piece = pieces[i][j];
 
             // 如果该位置有棋子，并且棋子属于敌方（即检查 byWhite 攻击时，棋子为白色，反之为黑色）
-            if (piece != nullptr && piece->isWhitePiece() != currentMoveColor) {
+            if (piece != nullptr && piece->isWhitePiece() != iswhite) {
 
                 QVector<QPoint> possibleMoves;
                 // 获取该棋子的所有可能的移动位置
@@ -600,7 +646,6 @@ void ChessBoard::switchMove(int startRow, int startCol, int endRow, int endCol, 
 
     // 更新位置并交换当前行动方
     currentMoveColor = !currentMoveColor;
-    statusPanel->switchTurns();
     piece->setMoved();
 
     ++eatOnePieceDistance;
@@ -632,11 +677,12 @@ bool ChessBoard::handleCastling(int startRow, int startCol, int endRow, int endC
     int baseRow = piece->isWhitePiece() ? 7 : 0;
     if (isKingAttacked()) return false;
 
-    if (endCol == 6 && !isSquareAttacked(QPoint(baseRow, 5))) { // 王侧易位
+    if (endCol == 6 && !isSquareAttacked(QPoint(baseRow, 5), piece -> isWhitePiece())) { // 王侧易位
         qDebug() << "Short Castling.";
         castleIndex = 1;
         moveRookForCastling(baseRow, 7, 5);
-    } else if (endCol == 2 && !isSquareAttacked(QPoint(baseRow, 3)) && !isSquareAttacked(QPoint(baseRow, 2))) { // 后侧易位
+    } else if (endCol == 2 && !isSquareAttacked(QPoint(baseRow, 3), piece -> isWhitePiece())
+               && !isSquareAttacked(QPoint(baseRow, 2), piece -> isWhitePiece())) { // 后侧易位
         qDebug() << "Long Castling.";
         castleIndex = 2;
         moveRookForCastling(baseRow, 0, 3);

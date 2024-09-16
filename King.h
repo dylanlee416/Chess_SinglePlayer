@@ -54,14 +54,13 @@ public:
 
         // 王车易位逻辑
         if (!isMoved()) {
-            // 0 表示白方的底线, 7 表示黑方的底线
             int baseRow = isWhitePiece() ? 7 : 0;
 
             if (startRow == baseRow) {
                 // 王侧易位（Short castling）
                 if (board[baseRow][7] != nullptr && dynamic_cast<Rook*>(board[baseRow][7]) != nullptr && !board[baseRow][7]->isMoved()) {
-                    if (board[baseRow][5] == nullptr && chessboard -> isSquareAttacked(QPoint(baseRow, 5))
-                        && board[baseRow][6] == nullptr && chessboard -> isSquareAttacked(QPoint(baseRow, 6))) {
+                    if (board[baseRow][5] == nullptr && !chessboard -> isSquareAttacked(QPoint(baseRow, 5), isWhitePiece())
+                        && board[baseRow][6] == nullptr && !chessboard -> isSquareAttacked(QPoint(baseRow, 6), isWhitePiece())) {
                         // 需要确保国王不会经过被攻击的格子，通常在其他地方会检查。
                         // 这里假设没有攻击检测（可以通过isKingAttacked函数来实现）。
                         moves.append(QPoint(baseRow, 6));  // 国王移动到g列 (6)
@@ -71,8 +70,8 @@ public:
                 // 后侧易位（Long castling）
                 if (board[baseRow][0] != nullptr && dynamic_cast<Rook*>(board[baseRow][0]) != nullptr && !board[baseRow][0]->isMoved()) {
                     if (board[baseRow][1] == nullptr
-                        && board[baseRow][2] == nullptr && chessboard -> isSquareAttacked(QPoint(baseRow, 2))
-                        && board[baseRow][3] == nullptr && chessboard -> isSquareAttacked(QPoint(baseRow, 3))) {
+                        && board[baseRow][2] == nullptr && !chessboard -> isSquareAttacked(QPoint(baseRow, 2), isWhitePiece())
+                        && board[baseRow][3] == nullptr && !chessboard -> isSquareAttacked(QPoint(baseRow, 3), isWhitePiece())) {
                         moves.append(QPoint(baseRow, 2));  // 国王移动到c列 (2)
                     }
                 }

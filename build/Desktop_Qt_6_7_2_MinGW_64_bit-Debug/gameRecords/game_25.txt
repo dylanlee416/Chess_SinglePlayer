@@ -1,6 +1,6 @@
 Game Record
 Time Control: 300s
-Start Time: 2024-09-16 14:49:21
+Start Time: 2024-09-16 14:57:56
 
 Step 1: Pe4
 bR	bN	bB	bQ	bK	bB	bN	bR	

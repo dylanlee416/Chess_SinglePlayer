@@ -21,6 +21,7 @@ public:
 
     // Method to start the game clock
     void startGame();
+    void stopTimer() { gameTimer->stop(); }
     // Method to reset the game
     void resetGame();
     void switchTurns();     // Switch turns between players
@@ -35,13 +36,13 @@ private:
     QComboBox* timeSelector;  // Dropdown for selecting time (5, 10, 15, 60 minutes)
     QTextEdit* moveHistory;   // TextEdit to display move history
     QPushButton* startButton; // Button to start the clock
+    QPushButton* resetButton;
 
     int whiteTime;            // White player's remaining time (in seconds)
     int blackTime;            // Black player's remaining time (in seconds)
     QLCDNumber* whiteClock;   // White player's clock display
     QLCDNumber* blackClock;   // Black player's clock display
 
-    bool whiteTurn;           // True if it's white's turn, false for black
     QTimer* gameTimer;        // Timer to control the game clock
 
     void initializeUI();      // Method to initialize the UI elements

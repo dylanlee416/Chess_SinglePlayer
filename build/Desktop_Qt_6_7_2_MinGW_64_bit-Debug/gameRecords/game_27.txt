@@ -1,0 +1,94 @@
+Game Record
+Time Control: 300s
+Start Time: 2024-09-16 14:58:04
+
+Step 3: Pe4
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 4: Pd5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	bP	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 5: Nf3
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	bP	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 6: Pe6
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	bP	00	00	00	
+00	00	00	bP	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 7: Bb5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	bP	00	00	00	
+00	wB	00	bP	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	00	wR	
+
+Step 8: Pc6
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	00	00	bP	bP	bP	
+00	00	bP	00	bP	00	00	00	
+00	wB	00	bP	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	00	wR	
+
+Step 9: Ba4
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	00	00	bP	bP	bP	
+00	00	bP	00	bP	00	00	00	
+00	00	00	bP	00	00	00	00	
+wB	00	00	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	00	wR	
+
+Step 10: Bc5
+bR	bN	bB	bQ	bK	00	bN	bR	
+bP	bP	00	00	00	bP	bP	bP	
+00	00	bP	00	bP	00	00	00	
+00	00	bB	bP	00	00	00	00	
+wB	00	00	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	00	wR	
+
+Step 11: O-O
+bR	bN	bB	bQ	bK	00	bN	bR	
+bP	bP	00	00	00	bP	bP	bP	
+00	00	bP	00	bP	00	00	00	
+00	00	bB	bP	00	00	00	00	
+wB	00	00	00	wP	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	00	wR	wK	00	
+
