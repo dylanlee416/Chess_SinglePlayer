@@ -231,6 +231,7 @@ void StatusPanel::showTimeOutMessage(bool whiteTurn)
 
     // 根据当前轮次设置文本 (例如，白方时间耗尽，黑方获胜)
     msgBox.setText(whiteTurn ? "White's time is up. Black wins!" : "Black's time is up. White wins!");
+    msgBox.setWindowIcon(QIcon(":/images/chess_icon.jpg"));
     msgBox.setIcon(QMessageBox::NoIcon);  // 去除图标
 
     // 调整字体大小并设置居中对齐
