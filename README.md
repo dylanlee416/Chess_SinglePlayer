@@ -70,7 +70,7 @@
 
 当一方的时间耗尽时，游戏会自动判定该方输棋。
 
-![时间耗尽](https://github.com/user-attachments/assets/d4beec4d-6308-433d-a17b-eb4d37c8997d)
+![时间耗尽](https://github.com/user-attachments/assets/1acecff1-07ca-4f13-b329-207de5b5ccae)
 
 ### 4.3 和棋
 
