@@ -35,7 +35,7 @@ void StatusPanel::initializeUI()
 
     // Create the time selector dropdown
     timeSelector = new QComboBox(this);
-    timeSelector->addItem("2 seconds", 2);
+    // timeSelector->addItem("2 seconds", 2);
     timeSelector->addItem("5 minutes", 300);
     timeSelector->addItem("10 minutes", 600);
     timeSelector->addItem("15 minutes", 900);
