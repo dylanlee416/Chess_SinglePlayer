@@ -66,12 +66,25 @@ void ChessBoard::initialGameRecordFile() {
     QFile file(gameRecordFileName);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         QTextStream out(&file);
-        out << "Game record initialized!\n\n";
+
+        // Get current date and time
+        QDateTime currentDateTime = QDateTime::currentDateTime();
+        QString formattedDateTime = currentDateTime.toString("yyyy-MM-dd HH:mm:ss");
+
+        // Get the game time from the status panel (e.g., 15 minutes)
+        int gameTime = statusPanel->getGameTime();  // Assuming it returns a string like "15 minutes"
+
+        // Write the header information to the file
+        out << "Game Record\n";
+        out << "Time Control: " << gameTime << "s\n";
+        out << "Start Time: " << formattedDateTime << "\n\n";
+
         file.close();
     } else {
         qDebug() << "Failed to open file for writing:" << gameRecordFileName;
     }
 }
+
 
 void ChessBoard::setupBoard()
 {

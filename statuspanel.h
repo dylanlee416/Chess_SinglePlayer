@@ -26,7 +26,7 @@ public:
     void switchTurns();     // Switch turns between players
     void addMoveHistoryToStatusPlane(QPair<QPoint, QPoint> move);
     void addMoveToHistory(const QString& move, int step);  // Add a move to the history
-
+    int getGameTime() { return timeSelector->currentData().toInt(); }
 
 private:
     ChessBoard* chessBoard;

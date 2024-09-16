@@ -22,6 +22,7 @@ public:
     void startGame() { isGaming = true; initialGameRecordFile(); }
     bool getIsGaming() { return isGaming; }
     void timeRunOut() { isGaming = false; }
+    bool isSquareAttacked(QPoint square);
 
 private:
     StatusPanel* statusPanel;
@@ -71,7 +72,6 @@ private:
     bool isFiftyMoveRule();
     bool isThreefoldRepetition();
     bool isStalemate();
-    bool isSquareAttacked(QPoint square);
     bool isKingAttacked();
     bool isCheckmate();
     void checkForCheckmateOrDraw();
