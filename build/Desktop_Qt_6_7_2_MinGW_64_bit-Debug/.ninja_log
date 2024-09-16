@@ -1,0 +1,19 @@
+# ninja log v6
+9	486	7481659744308356	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	c2b46ad183cf0e4b
+513	1540	7481648897433981	chess_autogen/timestamp	e9047ce130ebffdf
+2490	2908	7481597390633318	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/chess_autogen/EWIEGA46WW/qrc_resource.cpp	5c725947fd2ca779
+513	1540	7481648897433981	chess_autogen/mocs_compilation.cpp	e9047ce130ebffdf
+3027	3379	7481597394181556	CMakeFiles/chess.dir/chess_autogen/EWIEGA46WW/qrc_resource.cpp.obj	315171171cd6fcdc
+513	1540	7481648897433981	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/chess_autogen/timestamp	e9047ce130ebffdf
+513	1540	7481648897433981	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/chess_autogen/mocs_compilation.cpp	e9047ce130ebffdf
+2490	2908	7481597390633318	chess_autogen/EWIEGA46WW/qrc_resource.cpp	5c725947fd2ca779
+2921	7711	7481597393114237	CMakeFiles/chess.dir/main.cpp.obj	2af8b97738b02057
+2995	7949	7481597393863602	CMakeFiles/chess.dir/promotiondialog.cpp.obj	fbd3e6e3190f28c3
+1542	5253	7481648898749971	CMakeFiles/chess.dir/chess_autogen/mocs_compilation.cpp.obj	7d6f02c9b7511533
+1558	5138	7481648898908594	CMakeFiles/chess.dir/mainwindow.cpp.obj	27cc41d24a2ed5a5
+1592	5262	7481648899244200	CMakeFiles/chess.dir/statuspanel.cpp.obj	af12b37041519592
+1573	6460	7481648899058860	CMakeFiles/chess.dir/ChessBoard.cpp.obj	993758ad38bbe896
+670	2174	7481659759982681	build.ninja	d71527ef6e2f6a58
+6460	7102	7481648947934059	chess.exe	e78c99b0d09a812c
+488	1823	7481659759982681	build.ninja	d71527ef6e2f6a58
+9	538	7481659760627829	E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	c2b46ad183cf0e4b

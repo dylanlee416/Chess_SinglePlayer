@@ -1,0 +1,44 @@
+Game Record
+Time Control: 300s
+Start Time: 2024-09-16 12:18:18
+
+Step 1: Pf4
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wP	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	wP	00	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 2: Pe5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	00	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	00	bP	00	00	00	
+00	00	00	00	00	wP	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	wP	00	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 3: Nf3
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	00	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	00	bP	00	00	00	
+00	00	00	00	00	wP	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	wP	00	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 4: Pc6
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	00	bP	00	bP	bP	bP	
+00	00	bP	00	00	00	00	00	
+00	00	00	00	bP	00	00	00	
+00	00	00	00	00	wP	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	wP	00	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+

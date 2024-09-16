@@ -1,0 +1,114 @@
+Game Record
+Time Control: 300s
+Start Time: 2024-09-16 12:18:35
+
+Step 1: Nf3
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	wP	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 2: Pd5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	bP	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wN	00	00	
+wP	wP	wP	wP	wP	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 3: Pe3
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	bP	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wP	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 4: Pe5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	bP	bP	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wP	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	00	wR	
+
+Step 5: Bc4
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	bP	bP	00	00	00	
+00	00	wB	00	00	00	00	00	
+00	00	00	00	wP	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	00	wR	
+
+Step 6: Nf6
+bR	bN	bB	bQ	bK	bB	00	bR	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	00	bN	00	00	
+00	00	00	bP	bP	00	00	00	
+00	00	wB	00	00	00	00	00	
+00	00	00	00	wP	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	00	wR	
+
+Step 7: Rf1
+bR	bN	bB	bQ	bK	bB	00	bR	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	00	bN	00	00	
+00	00	00	bP	bP	00	00	00	
+00	00	wB	00	00	00	00	00	
+00	00	00	00	wP	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wR	00	00	
+
+Step 8: Rg8
+bR	bN	bB	bQ	bK	bB	bR	00	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	00	bN	00	00	
+00	00	00	bP	bP	00	00	00	
+00	00	wB	00	00	00	00	00	
+00	00	00	00	wP	wN	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wR	00	00	
+
+Step 9: Nd4
+bR	bN	bB	bQ	bK	bB	bR	00	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	00	bN	00	00	
+00	00	00	bP	bP	00	00	00	
+00	00	wB	wN	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wR	00	00	
+
+Step 10: Qd6
+bR	bN	bB	00	bK	bB	bR	00	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	bQ	00	bN	00	00	
+00	00	00	bP	bP	00	00	00	
+00	00	wB	wN	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wR	00	00	
+
+Step 11: Qh5
+bR	bN	bB	00	bK	bB	bR	00	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	bQ	00	bN	00	00	
+00	00	00	bP	bP	00	00	wQ	
+00	00	wB	wN	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wR	00	00	
+

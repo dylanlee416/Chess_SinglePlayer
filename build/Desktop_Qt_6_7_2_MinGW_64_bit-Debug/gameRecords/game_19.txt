@@ -1,0 +1,214 @@
+Game Record
+Time Control: 300s
+Start Time: 2024-09-16 12:59:38
+
+Step 1: Pe4
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 2: Pd5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	bP	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 3: Pd5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	wP	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 4: Pe6
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	bP	00	00	00	
+00	00	00	wP	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 5: Pe6
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	00	00	bP	bP	bP	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 6: Be7
+bR	bN	bB	bQ	bK	00	bN	bR	
+bP	bP	bP	00	bB	bP	bP	bP	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 7: Bb5
+bR	bN	bB	bQ	bK	00	bN	bR	
+bP	bP	bP	00	bB	bP	bP	bP	
+00	00	00	00	wP	00	00	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	wN	wR	
+
+Step 8: Qd7
+bR	bN	bB	00	bK	00	bN	bR	
+bP	bP	bP	bQ	bB	bP	bP	bP	
+00	00	00	00	wP	00	00	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	wN	wR	
+
+Step 9: Pd7
+bR	bN	bB	00	bK	00	bN	bR	
+bP	bP	bP	wP	bB	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	wN	wR	
+
+Step 10: Kf8
+bR	bN	bB	00	00	bK	bN	bR	
+bP	bP	bP	wP	bB	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	00	wN	wR	
+
+Step 11: Qe2
+bR	bN	bB	00	00	bK	bN	bR	
+bP	bP	bP	wP	bB	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	wQ	wP	wP	wP	
+wR	wN	wB	00	wK	00	wN	wR	
+
+Step 12: Nf6
+bR	bN	bB	00	00	bK	00	bR	
+bP	bP	bP	wP	bB	bP	bP	bP	
+00	00	00	00	00	bN	00	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	wQ	wP	wP	wP	
+wR	wN	wB	00	wK	00	wN	wR	
+
+Step 13: Pc3
+bR	bN	bB	00	00	bK	00	bR	
+bP	bP	bP	wP	bB	bP	bP	bP	
+00	00	00	00	00	bN	00	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	wP	00	00	00	00	00	
+wP	wP	00	wP	wQ	wP	wP	wP	
+wR	wN	wB	00	wK	00	wN	wR	
+
+Step 14: Nh5
+bR	bN	bB	00	00	bK	00	bR	
+bP	bP	bP	wP	bB	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	wB	00	00	00	00	00	bN	
+00	00	00	00	00	00	00	00	
+00	00	wP	00	00	00	00	00	
+wP	wP	00	wP	wQ	wP	wP	wP	
+wR	wN	wB	00	wK	00	wN	wR	
+
+Step 15: Pd4
+bR	bN	bB	00	00	bK	00	bR	
+bP	bP	bP	wP	bB	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	wB	00	00	00	00	00	bN	
+00	00	00	wP	00	00	00	00	
+00	00	wP	00	00	00	00	00	
+wP	wP	00	00	wQ	wP	wP	wP	
+wR	wN	wB	00	wK	00	wN	wR	
+
+Step 16: Pg6
+bR	bN	bB	00	00	bK	00	bR	
+bP	bP	bP	wP	bB	bP	00	bP	
+00	00	00	00	00	00	bP	00	
+00	wB	00	00	00	00	00	bN	
+00	00	00	wP	00	00	00	00	
+00	00	wP	00	00	00	00	00	
+wP	wP	00	00	wQ	wP	wP	wP	
+wR	wN	wB	00	wK	00	wN	wR	
+
+Step 17: Bg5
+bR	bN	bB	00	00	bK	00	bR	
+bP	bP	bP	wP	bB	bP	00	bP	
+00	00	00	00	00	00	bP	00	
+00	wB	00	00	00	00	wB	bN	
+00	00	00	wP	00	00	00	00	
+00	00	wP	00	00	00	00	00	
+wP	wP	00	00	wQ	wP	wP	wP	
+wR	wN	00	00	wK	00	wN	wR	
+
+Step 18: Rg8
+bR	bN	bB	00	00	bK	bR	00	
+bP	bP	bP	wP	bB	bP	00	bP	
+00	00	00	00	00	00	bP	00	
+00	wB	00	00	00	00	wB	bN	
+00	00	00	wP	00	00	00	00	
+00	00	wP	00	00	00	00	00	
+wP	wP	00	00	wQ	wP	wP	wP	
+wR	wN	00	00	wK	00	wN	wR	
+
+Step 19: Bf6
+bR	bN	bB	00	00	bK	bR	00	
+bP	bP	bP	wP	bB	bP	00	bP	
+00	00	00	00	00	wB	bP	00	
+00	wB	00	00	00	00	00	bN	
+00	00	00	wP	00	00	00	00	
+00	00	wP	00	00	00	00	00	
+wP	wP	00	00	wQ	wP	wP	wP	
+wR	wN	00	00	wK	00	wN	wR	
+
+Step 20: Ng3
+bR	bN	bB	00	00	bK	bR	00	
+bP	bP	bP	wP	bB	bP	00	bP	
+00	00	00	00	00	wB	bP	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	wP	00	00	00	00	
+00	00	wP	00	00	00	bN	00	
+wP	wP	00	00	wQ	wP	wP	wP	
+wR	wN	00	00	wK	00	wN	wR	
+
+Step 21: Qe7
+bR	bN	bB	00	00	bK	bR	00	
+bP	bP	bP	wP	wQ	bP	00	bP	
+00	00	00	00	00	wB	bP	00	
+00	wB	00	00	00	00	00	00	
+00	00	00	wP	00	00	00	00	
+00	00	wP	00	00	00	bN	00	
+wP	wP	00	00	00	wP	wP	wP	
+wR	wN	00	00	wK	00	wN	wR	
+

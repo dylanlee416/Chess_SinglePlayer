@@ -1,0 +1,184 @@
+Game Record
+Time Control: 300s
+Start Time: 2024-09-16 11:21:47
+
+Step 1: Pe4
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	bP	bP	bP	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 2: Pg6
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	bP	00	bP	
+00	00	00	00	00	00	bP	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	wQ	wK	wB	wN	wR	
+
+Step 3: Qf3
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	bP	00	bP	
+00	00	00	00	00	00	bP	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	wQ	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 4: Pf5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	00	00	bP	
+00	00	00	00	00	00	bP	00	
+00	00	00	00	00	bP	00	00	
+00	00	00	00	wP	00	00	00	
+00	00	00	00	00	wQ	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 5: Pf5
+bR	bN	bB	bQ	bK	bB	bN	bR	
+bP	bP	bP	bP	bP	00	00	bP	
+00	00	00	00	00	00	bP	00	
+00	00	00	00	00	wP	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wQ	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 6: Nh6
+bR	bN	bB	bQ	bK	bB	00	bR	
+bP	bP	bP	bP	bP	00	00	bP	
+00	00	00	00	00	00	bP	bN	
+00	00	00	00	00	wP	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wQ	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 7: Pg6
+bR	bN	bB	bQ	bK	bB	00	bR	
+bP	bP	bP	bP	bP	00	00	bP	
+00	00	00	00	00	00	wP	bN	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wQ	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 8: Bg7
+bR	bN	bB	bQ	bK	00	00	bR	
+bP	bP	bP	bP	bP	00	bB	bP	
+00	00	00	00	00	00	wP	bN	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	wQ	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 9: Qe4
+bR	bN	bB	bQ	bK	00	00	bR	
+bP	bP	bP	bP	bP	00	bB	bP	
+00	00	00	00	00	00	wP	bN	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wQ	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 10: Pc6
+bR	bN	bB	bQ	bK	00	00	bR	
+bP	bP	00	bP	bP	00	bB	bP	
+00	00	bP	00	00	00	wP	bN	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wQ	00	00	00	
+00	00	00	00	00	00	00	00	
+wP	wP	wP	wP	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 11: Pd3
+bR	bN	bB	bQ	bK	00	00	bR	
+bP	bP	00	bP	bP	00	bB	bP	
+00	00	bP	00	00	00	wP	bN	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wQ	00	00	00	
+00	00	00	wP	00	00	00	00	
+wP	wP	wP	00	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 12: Qb6
+bR	bN	bB	00	bK	00	00	bR	
+bP	bP	00	bP	bP	00	bB	bP	
+00	bQ	bP	00	00	00	wP	bN	
+00	00	00	00	00	00	00	00	
+00	00	00	00	wQ	00	00	00	
+00	00	00	wP	00	00	00	00	
+wP	wP	wP	00	00	wP	wP	wP	
+wR	wN	wB	00	wK	wB	wN	wR	
+
+Step 13: Bg5
+bR	bN	bB	00	bK	00	00	bR	
+bP	bP	00	bP	bP	00	bB	bP	
+00	bQ	bP	00	00	00	wP	bN	
+00	00	00	00	00	00	wB	00	
+00	00	00	00	wQ	00	00	00	
+00	00	00	wP	00	00	00	00	
+wP	wP	wP	00	00	wP	wP	wP	
+wR	wN	00	00	wK	wB	wN	wR	
+
+Step 14: Na6
+bR	00	bB	00	bK	00	00	bR	
+bP	bP	00	bP	bP	00	bB	bP	
+bN	bQ	bP	00	00	00	wP	bN	
+00	00	00	00	00	00	wB	00	
+00	00	00	00	wQ	00	00	00	
+00	00	00	wP	00	00	00	00	
+wP	wP	wP	00	00	wP	wP	wP	
+wR	wN	00	00	wK	wB	wN	wR	
+
+Step 15: Qe7
+bR	00	bB	00	bK	00	00	bR	
+bP	bP	00	bP	wQ	00	bB	bP	
+bN	bQ	bP	00	00	00	wP	bN	
+00	00	00	00	00	00	wB	00	
+00	00	00	00	00	00	00	00	
+00	00	00	wP	00	00	00	00	
+wP	wP	wP	00	00	wP	wP	wP	
+wR	wN	00	00	wK	wB	wN	wR	
+
+Step 16: Kf7
+bR	00	bB	00	00	00	00	bR	
+bP	bP	00	bP	wQ	bK	bB	bP	
+bN	bQ	bP	00	00	00	wP	bN	
+00	00	00	00	00	00	wB	00	
+00	00	00	00	00	00	00	00	
+00	00	00	wP	00	00	00	00	
+wP	wP	wP	00	00	wP	wP	wP	
+wR	wN	00	00	wK	wB	wN	wR	
+
+Step 17: Bf6
+bR	00	bB	00	00	00	00	bR	
+bP	bP	00	bP	wQ	bK	bB	bP	
+bN	bQ	bP	00	00	wB	wP	bN	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	wP	00	00	00	00	
+wP	wP	wP	00	00	wP	wP	wP	
+wR	wN	00	00	wK	wB	wN	wR	
+
+Step 18: Ke8
+bR	00	bB	00	bK	00	00	bR	
+bP	bP	00	bP	wQ	00	bB	bP	
+bN	bQ	bP	00	00	wB	wP	bN	
+00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	
+00	00	00	wP	00	00	00	00	
+wP	wP	wP	00	00	wP	wP	wP	
+wR	wN	00	00	wK	wB	wN	wR	
+

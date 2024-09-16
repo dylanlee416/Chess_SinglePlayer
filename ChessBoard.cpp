@@ -4,6 +4,7 @@
 #include <QIcon>
 #include <QDir>
 #include <QStringList>
+#include <QPropertyAnimation>
 
 #include "chessboard.h"
 #include "pawn.h"
@@ -138,8 +139,8 @@ void ChessBoard::initializePieces()
     setPiece(new Queen(false), 0, 3);
     setPiece(new Queen(true), 7, 3);
 
-    setPiece(new King(false), 0, 4);
-    setPiece(new King(true), 7, 4);
+    setPiece(new King(false, this), 0, 4);
+    setPiece(new King(true, this), 7, 4);
 }
 
 void ChessBoard::setPiece(ChessPiece* piece, int row, int col)
@@ -354,7 +355,9 @@ bool ChessBoard::isCheckmate() {
             // 只检查己方的棋子
             if (piece != nullptr && piece->isWhitePiece() == currentMoveColor) {
                 // 获取该棋子的所有可能移动
-                QVector<QPoint> possibleMoves = piece->getPossibleMoves(row, col, pieces, lastMovedPiece, lastMoveStart, lastMoveEnd);
+                QVector<QPoint> possibleMoves;
+
+                possibleMoves = piece->getPossibleMoves(row, col, pieces, lastMovedPiece, lastMoveStart, lastMoveEnd);
 
                 // 尝试每一个可能的移动
                 for (const QPoint& move : possibleMoves) {
@@ -483,8 +486,16 @@ bool ChessBoard::isSquareAttacked(QPoint square)
             // 如果该位置有棋子，并且棋子属于敌方（即检查 byWhite 攻击时，棋子为白色，反之为黑色）
             if (piece != nullptr && piece->isWhitePiece() != currentMoveColor) {
 
+                QVector<QPoint> possibleMoves;
                 // 获取该棋子的所有可能的移动位置
-                QVector<QPoint> possibleMoves = piece->getPossibleMoves(i, j, pieces, lastMovedPiece, lastMoveStart, lastMoveEnd);
+                if (dynamic_cast<King*>(piece) != nullptr)
+                {
+                    possibleMoves = dynamic_cast<King*>(piece) -> getPossibleAttackSquares(i, j, pieces);
+                }
+                else
+                {
+                    possibleMoves = piece->getPossibleMoves(i, j, pieces, lastMovedPiece, lastMoveStart, lastMoveEnd);
+                }
 
                 // 遍历棋子的所有可能移动位置，检查是否能攻击到目标格子
                 for (const QPoint& move : possibleMoves) {
@@ -538,6 +549,38 @@ void ChessBoard::movePiece(int startRow, int startCol, int endRow, int endCol) {
     checkForCheckmateOrDraw();
 }
 
+void ChessBoard::animatePieceMove(int startRow, int startCol, int endRow, int endCol, ChessPiece* piece) {
+    // 创建临时 QLabel 用于展示动画图标
+    QLabel* tempLabel = new QLabel(this);
+    QPixmap pixmap(piece->getImagePath());
+    tempLabel->setPixmap(pixmap.scaled(64, 64));  // 调整图片大小
+    tempLabel->setFixedSize(64, 64);
+    tempLabel->raise();  // 确保在棋盘之上显示
+
+    // 获取起点和终点的屏幕坐标
+    QPoint startPoint = squares[startRow][startCol]->mapToParent(squares[startRow][startCol]->rect().center());
+    QPoint endPoint = squares[endRow][endCol]->mapToParent(squares[endRow][endCol]->rect().center());
+
+    // 设置 QLabel 的初始位置
+    tempLabel->move(startPoint - QPoint(32, 32));  // 将图片的中心与起点对齐
+
+    // 创建动画对象，设置从起点到终点的移动动画
+    QPropertyAnimation* animation = new QPropertyAnimation(tempLabel, "pos");
+    animation->setDuration(500);  // 动画时长500毫秒
+    animation->setStartValue(startPoint - QPoint(32, 32));  // 起点
+    animation->setEndValue(endPoint - QPoint(32, 32));  // 终点
+    animation->setEasingCurve(QEasingCurve::OutCubic);  // 平滑的缓动曲线
+
+    // 动画结束后，将棋子放置到目标格子并删除临时图标
+    connect(animation, &QPropertyAnimation::finished, [tempLabel]() {
+        tempLabel->deleteLater();
+    });
+
+    // 开始动画
+    animation->start(QAbstractAnimation::DeleteWhenStopped);
+}
+
+
 void ChessBoard::switchMove(int startRow, int startCol, int endRow, int endCol, ChessPiece*& piece) {
     // 记录移动信息
     lastMoveStart = QPoint(startRow, startCol);
@@ -547,8 +590,11 @@ void ChessBoard::switchMove(int startRow, int startCol, int endRow, int endCol, 
     // 更新棋盘
     pieces[startRow][startCol] = nullptr;
     squares[startRow][startCol]->setIcon(QIcon());
-    setPiece(piece, endRow, endCol);
 
+    // 调用动画函数
+    animatePieceMove(startRow, startCol, endRow, endCol, piece);
+
+    setPiece(piece, endRow, endCol);
     // 处理升变
     handlePromotion(endRow, endCol, piece);
 
@@ -557,8 +603,9 @@ void ChessBoard::switchMove(int startRow, int startCol, int endRow, int endCol, 
     statusPanel->switchTurns();
     piece->setMoved();
 
-    ++ eatOnePieceDistance;
+    ++eatOnePieceDistance;
 }
+
 
 bool ChessBoard::tryMovePiece(int startRow, int startCol, int endRow, int endCol) {
     ChessPiece* piece = pieces[startRow][startCol];
@@ -624,22 +671,28 @@ bool ChessBoard::handlePromotion(int endRow, int endCol, ChessPiece*& piece) {
     if (dynamic_cast<Pawn*>(piece) != nullptr && (endRow == 0 || endRow == 7)) {
         PromotionDialog promotionDialog(this, piece->isWhitePiece());
 
-        // 获取棋盘格的按钮位置
+        // 获取棋盘格的全局坐标位置
         QPoint piecePosition = squares[endRow][endCol]->mapToGlobal(QPoint(0, 0));
 
-        // 调整对话框位置
-        promotionDialog.move(piecePosition.x(), piecePosition.y());
+        // 计算 PromotionDialog 的显示位置
+        // 获取棋盘格的宽度，用于计算对话框的偏移
+        int squareWidth = squares[endRow][endCol]->width();
 
+        // 调整对话框位置到棋子的右侧
+        promotionDialog.move(piecePosition.x() + squareWidth, piecePosition.y());
+
+        // 显示对话框并处理结果
         if (promotionDialog.exec() == QDialog::Accepted) {
             // 更新 piece 指针为用户选择的新棋子
             piece = promotionDialog.getSelectedPiece();
-            setPiece(piece, endRow, endCol); // 确保棋盘设置了新棋子
+            setPiece(piece, endRow, endCol);  // 确保棋盘设置了新棋子
         }
 
         return true;
     }
     return false;
 }
+
 
 void ChessBoard::moveRookForCastling(int row, int rookStartCol, int rookEndCol) {
     ChessPiece* rook = pieces[row][rookStartCol];

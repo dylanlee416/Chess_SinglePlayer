@@ -1,0 +1,38 @@
+{
+	"BUILD_DIR" : "E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/chess_autogen",
+	"CMAKE_BINARY_DIR" : "E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/Code/QT/chess",
+	"CMAKE_SOURCE_DIR" : "E:/Code/QT/chess",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/chess_autogen/include",
+	"INPUTS" : 
+	[
+		"E:/Code/QT/chess/images/white_knight.svg.png",
+		"E:/Code/QT/chess/images/white_king.svg.png",
+		"E:/Code/QT/chess/images/white_bishop.svg.png",
+		"E:/Code/QT/chess/images/chess_icon.jpg",
+		"E:/Code/QT/chess/images/black_queen.svg.png",
+		"E:/Code/QT/chess/images/white_queen.svg.png",
+		"E:/Code/QT/chess/images/black_bishop.svg.png",
+		"E:/Code/QT/chess/images/black_knight.svg.png",
+		"E:/Code/QT/chess/images/black_rook.svg.png",
+		"E:/Code/QT/chess/images/black_pawn.svg.png",
+		"E:/Code/QT/chess/images/white_pawn.svg.png",
+		"E:/Code/QT/chess/images/black_king.svg.png",
+		"E:/Code/QT/chess/images/white_rook.svg.png",
+		"E:/Code/QT/chess/sounds/move_sound.mp3"
+	],
+	"LOCK_FILE" : "E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/chess_autogen.dir/AutoRcc_resource_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resource" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resource.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/6.7.2/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "E:/Code/QT/chess/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/chess_autogen.dir/AutoRcc_resource_EWIEGA46WW_Used.txt",
+	"SOURCE" : "E:/Code/QT/chess/resource.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

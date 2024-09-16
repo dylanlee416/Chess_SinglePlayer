@@ -62,6 +62,7 @@ private:
     bool isMoveValid(int startRow, int startCol, int endRow, int endCol);
     void movePiece(int startRow, int startCol, int endRow, int endCol);
     void switchMove(int startRow, int startCol, int endRow, int endCol, ChessPiece*& piece);
+    void animatePieceMove(int startRow, int startCol, int endRow, int endCol, ChessPiece* piece);
 
     void resetSquareColor(int row, int col);
     void clearHighlightedSquares();  // 清除高亮
@@ -82,7 +83,6 @@ private:
     bool handleEnPassant(int startRow, int startCol, int endRow, int endCol, ChessPiece* piece);
     bool handlePromotion(int endRow, int endCol, ChessPiece*& piece);
     ChessPiece* showPromotionDialog(ChessPiece* piece);
-
 
     QString gameRecordFileName;
     void initialGameRecordFile();
